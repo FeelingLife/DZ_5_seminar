@@ -5,7 +5,7 @@
 
 // [-4, -6, 89, 6] -> 0
 
-int[] array = new int[6];
+int[] array = new int[5];
 
 for (int i = 0; i < array.Length; i++)
 {
@@ -15,5 +15,5 @@ for (int i = 0; i < array.Length; i++)
     Console.Write(" ");
 
 }
-int sumNumbers = array[1] + array[3] + array[5];
+int sumNumbers = array[0] + array[2] + array[4];
 Console.WriteLine($"Сумма элементов, стоящих на нечётных индексах: {sumNumbers}");
