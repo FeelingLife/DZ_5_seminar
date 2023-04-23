@@ -19,6 +19,6 @@ for (int i = 0; i < array.Length; i++)
         if (array[i] % 2 == 0)
         {
             sumNumbers = sumNumbers + 1;
-            Console.WriteLine($"Количество четных чисел: {sumNumbers}");
         }
     }
+    Console.WriteLine($"Количество четных чисел: {sumNumbers}");
