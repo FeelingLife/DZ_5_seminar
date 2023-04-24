@@ -8,3 +8,29 @@
 // [1, 2, 3, 6, 2] -> 0
 
 // [10, 11, 12, 13, 14] -> 5
+
+int[] array = new int[10];
+
+for (int i = 0; i < array.Length; i++)
+{
+    int randomNumber = new Random().Next(-100, 100);
+    array[i] = randomNumber;
+    Console.Write(array[i] + " ");
+    Console.Write(" ");
+}
+
+Console.WriteLine(" ");
+int Check(int x)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] > 10 && array[i] < 99)
+        {
+            x = x + 1;
+        }
+    }
+    return x;
+}
+
+int y = Check(0);
+Console.WriteLine($"Количество чисел: {y}");

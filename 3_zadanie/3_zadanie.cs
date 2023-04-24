@@ -15,6 +15,7 @@ for (int i = 0; i < array.Length; i++)
 
 int maxNumber = array[1];
 int minNumber = array[1];
+
 for (int j = 0; j < array.Length; j++)
 {
     if (maxNumber > array[j])

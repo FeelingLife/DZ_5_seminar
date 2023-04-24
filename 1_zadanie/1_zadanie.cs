@@ -4,7 +4,6 @@
 // [345, 897, 568, 234] -> 2
 
 int[] array = new int[5];
-int sumNumbers = 0;
 
 for (int i = 0; i < array.Length; i++)
 {
@@ -14,6 +13,9 @@ for (int i = 0; i < array.Length; i++)
     Console.WriteLine(" ");
 }
 
+int SearchChetnoeNumbers(int sumNumbers)
+{
+
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i] % 2 == 0)
@@ -22,3 +24,7 @@ for (int i = 0; i < array.Length; i++)
         }
     }
     Console.WriteLine($"Количество четных чисел: {sumNumbers}");
+    return sumNumbers;
+}
+
+int x = SearchChetnoeNumbers(0);
